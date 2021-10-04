@@ -1,4 +1,4 @@
-//author shagun
+//author: shagun
 
 class Register {
     private static Register register = null;
