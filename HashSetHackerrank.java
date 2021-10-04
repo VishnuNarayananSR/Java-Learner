@@ -1,5 +1,7 @@
 import java.util.*;
-public class HashSetHackerrank{
+
+public class HashSetHackerrank
+{
     public static String getOut(int numberOfMatches, String squads, int squad1, int squad2)
     {
         String[] squadArr = squads.split("#");
@@ -13,8 +15,8 @@ public class HashSetHackerrank{
         while (it.hasNext()) {
             intersection.retainAll(it.next());
         }
-        Set<String> diff = new HashSet<>(squadSet.get(squad1 - 1));
-        diff.removeAll(squadSet.get(squad2 - 1));
+        Set<String> diff = new HashSet<>(squadSet.get(squad2 - 1));
+        diff.removeAll(squadSet.get(squad1 - 1));
         StringBuilder sbr = new StringBuilder();
         String sep = "";
         for (String str : intersection) {
