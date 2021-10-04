@@ -1,9 +1,3 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 abstract class Student {
     public abstract String result(String MarksOfStudent);
 
