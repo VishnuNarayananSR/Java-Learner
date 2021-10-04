@@ -8,7 +8,8 @@ class CipherDecipher{
         for (char ch : normal.toCharArray()) {
             if(Character.isLowerCase(ch)) sb.append(Character.toUpperCase(ch));
             else if(Character.isUpperCase(ch))sb.append(Character.toLowerCase(ch));
-            else sb.append('*');
+            else if(ch == ' ')sb.append('*');
+            else sb.append(ch);
         }
         sb = sb.reverse();
         String result = "";
